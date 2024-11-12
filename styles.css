@@ -1,0 +1,176 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------- HEADER -------------------------------------*/
+
+.header{
+    background-color: gray;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    
+}
+
+nav{
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navHeaderLinks{
+    padding: 0.5em;
+    font-size: 2em;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.navHeaderLinks:hover {
+    background-color: wheat;
+    
+}
+
+/*---------------------------- BODY -------------------------------------*/
+
+/*---------------------------- BODY PART 1 -------------------------------------*/
+
+.content1{
+    background-color: rgba(82, 82, 195, 0.2);
+    display: flex;
+    height: 40vh;
+}
+
+.introduction{
+    background-color: blanchedalmond;
+    padding: 1.5em;
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 22vh;
+    width: 100vw;
+    margin: 3em;
+}
+
+.imageContainer{
+    width: 10vw;
+    height: 20vh;
+    float: left;
+    padding: 1em;
+}
+.profilePicture{
+    width: 100%;
+    height: auto;
+}
+
+.descriptionContainer{
+    display: block;
+    width: 85%;
+    float: right;
+    margin-top: 2vh;
+    font-size: 1.4em;
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+
+/*---------------------------- BODY PART 2 -------------------------------------*/
+
+.content2{
+    width: 100vw;
+    height: 55vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,45,152,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    position: relative;
+}
+
+.gameCenter{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content2 h1 {
+    padding: 5em;
+    float: left;
+    
+}
+
+.content2 .gamesImages{
+    display: flex;
+    float: left;
+    margin-top: 1.5em;
+}
+
+.content2 .gamesImages ul{
+    list-style-type: none;
+}
+
+.content2 .gamesImages ul li{
+    float: left;
+}
+
+.content2 .gamesImages ul li img{
+    opacity: 1;
+    transition: 0.6s;
+    display: block;
+}
+
+.content2 .gamesImages ul li img:hover{
+    opacity: 0.4;
+}
+
+.gameContainer{
+    position: relative;
+    cursor: pointer;
+}
+
+.gameContainer:hover .gameText {
+    opacity: 1;
+}
+.gameText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+/*---------------------------- Footer -------------------------------------*/
+
+.footer{
+    background-color: gray;
+    width: 100vw;
+    height: 20vh;
+}
+
+.socials ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials ul li{
+    float: left;
+}
+
+.socials ul li img{
+    margin: 2em 1em;
+    width: 3vw;
+    height: 5.2vh;
+}
